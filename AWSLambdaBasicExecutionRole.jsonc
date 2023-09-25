@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "InvokeLambda",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:InvokeFunction"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:accountID:function:invalidation" // #replace accountID
+        },
+        {
+            "Sid": "S3BucketTrigger",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": "arn:aws:s3:::bucketname/*" // #replace bucket name
+        },
+        {
+            "Sid": "CloudFrontInvalidate",
+            "Effect": "Allow",
+            "Action": "cloudfront:CreateInvalidation",
+            "Resource": "arn:aws:cloudfront::accountID:distribution/distributionID" // #replace accountID and distributionID
+        }
+    ]
+}
