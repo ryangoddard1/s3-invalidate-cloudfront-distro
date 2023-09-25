@@ -5,4 +5,5 @@ Note: CodeCommit and CodePipeline can work as well. It was more steps to setup, 
 
 Simple Flowchart of process:
 
-![awscloudinval](https://github.com/ryangoddard1/s3-invalidate-cloudfront-distro/assets/84172786/56fb9d70-acb8-4a71-aece-fb63423b3843)
+![awscloudinval](https://github.com/ryangoddard1/s3-invalidate-cloudfront-distro/assets/84172786/86d4b47e-49ee-4357-aa4c-a7299476909b)
+
